@@ -1,12 +1,13 @@
-# terminal_minecraft
+# Terminal Minecraft
 
-in linux compile with
-`gcc terminal_minecraft.c -lm -lX11`
+This is a fork of https://github.com/Kameldieb/terminal_minecraft, including an SDL version and improved controls.
 
-controls:
-- use arrow keys for moving
-- use w, a, s, d keys for changing view angles
-- use space for placing block
-- use shift + space for removing block
+To play the game, just clone the repo, as usual, then run `make` after changing to the cloned directory. If you want to play the original version (not SDL), then run `make terminal` instead.
 
-no collision detection etc.
+Controls:
+- Use W, A, S, and D Keys for Moving.
+- Use the Arrow Keys for Changing View Angles.
+- Use Space for Placing Blocks.
+- Use Shift + Space for Removing Blocks.
+
+There is currently not any collision detection, and falling off the map will result in a segmentation fault. You can also infinitely look up or down.
